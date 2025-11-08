@@ -1,0 +1,100 @@
+
+        
+    <header id="page-header" class="header-32">
+
+	<!-- top bar -->
+	<div class="header-32-top-bar">
+		<div class="container">
+			<div class="row">
+
+				<div class="col-sm-8 col-xs-12">
+					<ul class="list-inline header-32-bar-list">
+						<li><i class="ri-phone-line"></i> +91&nbsp;888&nbsp;888&nbsp;8888</li>
+						<li class="hidden-xs"><span class="sep">|</span>
+							<i class="ri-map-pin-line"></i> Address:&nbsp;1215, CP&nbsp;Street,&nbsp;Mumbai
+						</li>
+					</ul>
+				</div>
+
+				<div class="col-sm-4 col-xs-12 text-right">
+					<ul class="list-inline header-32-bar-list">
+						<li><i class="ri-mail-line"></i> Email:&nbsp;info@chartered.com</li>
+					</ul>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+	<!-- logo + nav -->
+	<div class="header-32-holder">
+		<div class="container">
+			<div class="row">
+
+				<!-- logo -->
+				<div class="col-xs-6 col-sm-3">
+					<a href="home.html" class="header-32-logo">
+						<img src="assets/clients/law/law/images/logo-header-32.png" alt="FinAdviser" class="img-responsive">
+					</a>
+				</div>
+
+				<!-- nav -->
+				<div class="col-xs-6 col-sm-9">
+					<nav class="navbar navbar-default header-32-navbar" role="navigation">
+						<div class="navbar-header">
+							<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#dynamic-header">
+								<span class="sr-only">Toggle navigation</span>
+								<span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+							</button>
+						</div>
+
+						<div class="collapse navbar-collapse" id="dynamic-header"><ul class="nav navbar-nav navbar-right main-navigation text-uppercase font-lato"><li><a href="index.html">Home</a></li><li><a href="About&nbsp;Us.html">About&nbsp;Us</a></li><li><a href="Our&nbsp;Services.html">Our&nbsp;Services</a></li><li><a href="Our&nbsp;Team.html">Our&nbsp;Team</a></li><li><a href="Resources.html">Resources</a></li><li><a href="Contact&nbsp;Us.html">Contact&nbsp;Us</a></li></ul></div>
+					</nav>
+				</div>
+
+			</div>
+		</div>
+	</div>
+</header>
+
+<!-- =========================================================
+     HERO (background set inline so you can swap easily)
+     ========================================================= -->
+<section class="header-32-hero" style="background: url(&quot;http://127.0.0.1:8000/assets/clients/law/law/images/header-32-bg.jpg&quot;) center center / cover no-repeat;">
+	<div class="header-32-hero-overlay"></div>
+
+	<div class="container header-32-hero-content">
+		<h1 class="header-32-hero-title">
+			Guiding Your Growth<br>
+			with <span class="header-32-highlight">Trusted Expertise</span>
+		</h1>
+
+		<p class="header-32-hero-sub">
+			Expert CA committed to tax planning, auditing, and compliance.<br>
+			Let us simplify your finances and help your business grow.
+		</p>
+
+		<a href="#" class="btn header-32-btn-primary">
+			Get Started <i class="ri-arrow-right-line"></i>
+		</a>
+	</div>
+
+</section>
+
+<script>
+	$(function () {
+
+		var $header = $('#page-header');
+		var heroHeight = $('.header-32-hero').outerHeight();   // distance to scroll
+
+		/* toggle class on scroll */
+		$(window).on('scroll', function () {
+			if ($(this).scrollTop() >= heroHeight) {
+				$header.addClass('header-32--sticky');
+			} else {
+				$header.removeClass('header-32--sticky');
+			}
+		});
+
+	});
+</script>
